@@ -1,0 +1,97 @@
+{
+  "main": {
+    "header-nav-links": {
+      "about": "About",
+      "contact": "Contact",
+      "docs": "Docs",
+      "special-mentions": "Special Mentions",
+      "source-code": "Source Code"
+    },
+    "top-menu": {
+      "upload": {
+        "tooltip": "Upload your file"
+      },
+      "text-editor": {
+        "tooltip": "Text editor"
+      },
+      "download": {
+        "title": "Download generated text",
+        "description": "Download your file in the format of your choice",
+        "tooltip": "Download your file",
+        "format": {
+          "pdf": "Portable Document Format",
+          "docx": "Microsoft Word Document",
+          "txt": "Plain Text File"
+        },
+        "action": {
+          "download": "Download",
+          "downloading": "Downloading...",
+          "cancel": "Cancel"
+        },
+        "toast": {
+          "success": "File downloaded successfully",
+          "error": {
+            "title": "Error downloading file",
+            "message": "An error occurred while downloading the file"
+          }
+        }
+      },
+      "language": {
+        "ar": "Arabic",
+        "en": "English",
+        "fr": "French"
+      },
+      "theme": {
+        "dark": "Dark",
+        "light": "Light",
+        "system": "System"
+      },
+      "memory-reboot": {
+        "tooltip": "View history",
+        "title": "Upload history",
+        "description": "You can re-use your uploaded images by clicking on them.",
+        "null": "No images uploaded yet"
+      }
+    },
+    "main-box": {
+      "input-zone": {
+        "label": "Upload image",
+        "button": "Download",
+        "error": {
+          "file-type": "Invalid file type",
+          "file-size": "File size is too large",
+          "file-upload": "Error uploading file",
+          "file-download": "Error downloading file",
+          "url": "Invalid URL"
+        }
+      },
+      "settings-zone": {
+        "model": {
+          "label": "Model"
+        },
+        "render-mode": {
+          "label": "Render mode"
+        },
+        "action": {
+          "analyze": "Analyze",
+          "analyzing": "Analyzing..."
+        },
+        "toast": {
+          "success": "Analysis completed successfully",
+          "error": {
+            "title": "Error analyzing text",
+            "message": "An error occurred while analyzing the text"
+          }
+        }
+      },
+      "output-zone": {
+        "title": "Scanned text",
+        "description": "The output of the analysis will be displayed here",
+        "merged": {
+          "copy": "Copy",
+          "placeholder": "Your scanned text will appear here"
+        }
+      }
+    }
+  }
+}

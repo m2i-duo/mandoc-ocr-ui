@@ -1,0 +1,97 @@
+{
+  "main": {
+    "header-nav-links": {
+      "about": "À propos",
+      "contact": "Contact",
+      "docs": "Documents",
+      "special-mentions": "Mentions spéciales",
+      "source-code": "Code source"
+    },
+    "top-menu": {
+      "upload": {
+        "tooltip": "Téléchargez votre fichier"
+      },
+      "text-editor": {
+        "tooltip": "Éditeur de texte"
+      },
+      "download": {
+        "title": "Télécharger le texte généré",
+        "description": "Téléchargez votre fichier au format de votre choix",
+        "tooltip": "Téléchargez votre fichier",
+        "format": {
+          "pdf": "Format de document portable",
+          "docx": "Document Microsoft Word",
+          "txt": "Fichier texte brut"
+        },
+        "action": {
+          "download": "Télécharger",
+          "downloading": "Téléchargement...",
+          "cancel": "Annuler"
+        },
+        "toast": {
+          "success": "Fichier téléchargé avec succès",
+          "error": {
+            "title": "Erreur lors du téléchargement",
+            "message": "Une erreur est survenue lors du téléchargement du fichier"
+          }
+        }
+      },
+      "language": {
+        "ar": "Arabe",
+        "en": "Anglais",
+        "fr": "Français"
+      },
+      "theme": {
+        "dark": "Sombre",
+        "light": "Clair",
+        "system": "Système"
+      },
+      "memory-reboot": {
+        "tooltip": "Voir l'historique",
+        "title": "Historique des téléchargements",
+        "description": "Vous pouvez réutiliser vos images téléchargées en cliquant dessus.",
+        "null": "Aucune image téléchargée pour le moment"
+      }
+    },
+    "main-box": {
+      "input-zone": {
+        "label": "Télécharger une image",
+        "button": "Télécharger",
+        "error": {
+          "file-type": "Type de fichier invalide",
+          "file-size": "La taille du fichier est trop grande",
+          "file-upload": "Erreur lors du téléchargement du fichier",
+          "file-download": "Erreur lors du téléchargement",
+          "url": "URL invalide"
+        }
+      },
+      "settings-zone": {
+        "model": {
+          "label": "Modèle"
+        },
+        "render-mode": {
+          "label": "Mode d'affichage"
+        },
+        "action": {
+          "analyze": "Analyser",
+          "analyzing": "Analyse en cours..."
+        },
+        "toast": {
+          "success": "Analyse terminée avec succès",
+          "error": {
+            "title": "Erreur lors de l'analyse",
+            "message": "Une erreur est survenue lors de l'analyse du texte"
+          }
+        }
+      },
+      "output-zone": {
+        "title": "Texte scanné",
+        "description": "Le résultat de l'analyse s'affichera ici",
+        "merged": {
+          "copy": "Copier",
+          "placeholder": "Votre texte scanné apparaîtra ici"
+        }
+      }
+    }
+  }
+}

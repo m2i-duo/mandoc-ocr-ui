@@ -1,0 +1,18 @@
+{
+  "text-editor": {
+    "input": {
+      "title": "Paragraph",
+      "placeholder": "Type your text here",
+      "characters": "Characters",
+      "button": "Style text"
+    },
+    "output": {
+      "title": "Styled text",
+      "placeholder": "Generated text will appear here",
+      "tooltip": {
+        "download": "Download a screenshot of the styled text",
+        "use": "Use this styled text as image"
+      }
+    }
+  }
+}

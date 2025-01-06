@@ -1,0 +1,97 @@
+{
+  "main": {
+    "header-nav-links": {
+      "about": "حول",
+      "contact": "اتصال",
+      "docs": "وثائق",
+      "special-mentions": "إشارات خاصة",
+      "source-code": "الكود المصدري"
+    },
+    "top-menu": {
+      "upload": {
+        "tooltip": "قم بتحميل ملفك"
+      },
+      "text-editor": {
+        "tooltip": "محرر النصوص"
+      },
+      "download": {
+        "title": "تحميل النص المُنتج",
+        "description": "قم بتنزيل ملفك بالتنسيق الذي تختاره",
+        "tooltip": "تحميل ملفك",
+        "format": {
+          "pdf": "تنسيق المستند المحمول",
+          "docx": "مستند مايكروسوفت وورد",
+          "txt": "ملف نصي عادي"
+        },
+        "action": {
+          "download": "تحميل",
+          "downloading": "جارٍ التحميل...",
+          "cancel": "إلغاء"
+        },
+        "toast": {
+          "success": "تم تحميل الملف بنجاح",
+          "error": {
+            "title": "خطأ في تحميل الملف",
+            "message": "حدث خطأ أثناء تحميل الملف"
+          }
+        }
+      },
+      "language": {
+        "ar": "العربية",
+        "en": "الإنجليزية",
+        "fr": "الفرنسية"
+      },
+      "theme": {
+        "dark": "داكن",
+        "light": "فاتح",
+        "system": "النظام"
+      },
+      "memory-reboot": {
+        "tooltip": "عرض السجل",
+        "title": "سجل التحميل",
+        "description": "يمكنك إعادة استخدام الصور التي قمت بتحميلها بالنقر عليها.",
+        "null": "لم يتم تحميل أي صور بعد"
+      }
+    },
+    "main-box": {
+      "input-zone": {
+        "label": "تحميل الصورة",
+        "button": "تحميل",
+        "error": {
+          "file-type": "نوع الملف غير صالح",
+          "file-size": "حجم الملف كبير جدًا",
+          "file-upload": "خطأ في تحميل الملف",
+          "file-download": "خطأ في تنزيل الملف",
+          "url": "رابط غير صالح"
+        }
+      },
+      "settings-zone": {
+        "model": {
+          "label": "النموذج"
+        },
+        "render-mode": {
+          "label": "وضع العرض"
+        },
+        "action": {
+          "analyze": "تحليل",
+          "analyzing": "جارٍ التحليل..."
+        },
+        "toast": {
+          "success": "اكتمل التحليل بنجاح",
+          "error": {
+            "title": "خطأ في تحليل النص",
+            "message": "حدث خطأ أثناء تحليل النص"
+          }
+        }
+      },
+      "output-zone": {
+        "title": "النص المفحوص",
+        "description": "سيتم عرض ناتج التحليل هنا",
+        "merged": {
+          "copy": "نسخ",
+          "placeholder": "سيظهر النص المفحوص هنا"
+        }
+      }
+    }
+  }
+}

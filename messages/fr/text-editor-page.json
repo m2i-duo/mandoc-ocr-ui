@@ -1,0 +1,18 @@
+{
+  "text-editor": {
+    "input": {
+      "title": "Paragraphe",
+      "placeholder": "Tapez votre texte ici",
+      "characters": "Caractères",
+      "button": "Styliser le texte"
+    },
+    "output": {
+      "title": "Texte stylisé",
+      "placeholder": "Le texte généré apparaîtra ici",
+      "tooltip": {
+        "download": "Télécharger une capture d'écran du texte stylisé",
+        "use": "Utiliser ce texte stylisé comme image"
+      }
+    }
+  }
+}
