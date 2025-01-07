@@ -47,7 +47,8 @@ export function downloadFile(blob: Blob, filename: string) {
 }
 
 export const generateRandomUUid = () => {
-    return v4()
+    // must be currentTimestamp + uuid-v4
+    return `${Date.now()}-${v4()}`
 }
 
 export const convertBlobToBase64 = async(blob: Blob) => {

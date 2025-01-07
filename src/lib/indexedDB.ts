@@ -36,7 +36,7 @@ export const clearStore = async () => {
 
 export const getAllImageRecords = async (): Promise<ImageRecord[]> => {
     const db = await initDB();
-    return await db.getAll(STORE_NAME);
+    return (await db.getAll(STORE_NAME)).reverse();
 }
 
 export const getBaseImage = async (id: string): Promise<Blob | undefined> => {

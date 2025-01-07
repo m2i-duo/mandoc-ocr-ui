@@ -56,13 +56,23 @@
     "main-box": {
       "input-zone": {
         "label": "تحميل الصورة",
-        "button": "تحميل",
+        "button": {
+          "upload": "تحميل",
+          "uploading": "جارٍ التحميل..."
+        },
         "error": {
           "file-type": "نوع الملف غير صالح",
           "file-size": "حجم الملف كبير جدًا",
           "file-upload": "خطأ في تحميل الملف",
           "file-download": "خطأ في تنزيل الملف",
           "url": "رابط غير صالح"
+        },
+        "toast": {
+            "success": "تم تحميل الملف بنجاح",
+            "error": {
+                "title": "خطأ في تحميل الملف",
+                "message": "حدث خطأ أثناء تحميل الملف"
+            }
         }
       },
       "settings-zone": {
