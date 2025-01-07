@@ -56,13 +56,23 @@
     "main-box": {
       "input-zone": {
         "label": "Télécharger une image",
-        "button": "Télécharger",
+        "button": {
+          "upload": "Télécharger",
+          "uploading": "Téléchargement..."
+        },
         "error": {
           "file-type": "Type de fichier invalide",
           "file-size": "La taille du fichier est trop grande",
           "file-upload": "Erreur lors du téléchargement du fichier",
           "file-download": "Erreur lors du téléchargement",
           "url": "URL invalide"
+        },
+        "toast": {
+            "success": "Fichier téléchargé avec succès",
+            "error": {
+                "title": "Erreur lors du téléchargement du fichier",
+                "message": "Une erreur est survenue lors du téléchargement du fichier"
+            }
         }
       },
       "settings-zone": {

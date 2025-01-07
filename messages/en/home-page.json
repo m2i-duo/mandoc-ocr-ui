@@ -56,13 +56,23 @@
     "main-box": {
       "input-zone": {
         "label": "Upload image",
-        "button": "Download",
+        "button": {
+          "upload": "Upload",
+          "uploading": "Uploading..."
+        },
         "error": {
           "file-type": "Invalid file type",
           "file-size": "File size is too large",
           "file-upload": "Error uploading file",
           "file-download": "Error downloading file",
           "url": "Invalid URL"
+        },
+        "toast": {
+          "success": "File uploaded successfully",
+          "error": {
+            "title": "Error uploading file",
+            "message": "An error occurred while uploading the file"
+          }
         }
       },
       "settings-zone": {
