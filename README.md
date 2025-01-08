@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mandoc OCR Docker Deployment
 
-## Getting Started
+Mandoc OCR is an Arabic Optical Character Recognition (OCR) system utilizing Recurrent Neural Networks (RNN) and Connectionist Temporal Classification (CTC) for accurate text recognition.
 
-First, run the development server:
+This README provides instructions for setting up and running the Mandoc OCR API and UI using Docker.
+
+## Prerequisites
+Ensure the following are installed on your system:
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/) (optional, for future integration)
+
+## Commands Overview
+
+### 1. Pull the Docker Images
+Retrieve the latest images for both the API and the UI:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker pull ghcr.io/m2i-duo/mandoc-ocr-api:latest
+docker pull ghcr.io/m2i-duo/mandoc-ocr-ui/web:latest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Run the OCR API
+Start the OCR API on port `8000`:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+docker run -p 8000:8000 ghcr.io/m2i-duo/mandoc-ocr-api
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Run the OCR UI
+Start the OCR UI on port `3000`:
 
-## Learn More
+```bash
+docker run -p 3000:3000 ghcr.io/m2i-duo/mandoc-ocr-ui/web
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Access the Services
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### OCR API
+Once the container is running, the OCR API will be accessible at:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+http://localhost:8000
+```
 
-## Deploy on Vercel
+### OCR UI
+Once the container is running, the OCR UI will be accessible at:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+http://localhost:3000
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes
+- Ensure that ports `8000` and `3000` are available on your machine.
+- Use `docker ps` to verify the containers are running.
+- To stop a container, use `docker stop <container_id>`.
+- For persistent data, consider mounting volumes (not covered in this README).
+
+## Troubleshooting
+- If a port conflict occurs, ensure no other service is using the same port or modify the `-p` option to use different ports (e.g., `-p 8080:8000`).
+- Check logs for more details using `docker logs <container_id>`.
+
+## Additional Resources
+- [Docker Documentation](https://docs.docker.com/)
+- Contact the project maintainers for support or issues.
+
+## Acknowledgements
+This project builds upon the work and insights from the [Arabic Deep Learning OCR](https://github.com/msfasha/Arabic-Deep-Learning-OCR) repository. Special thanks to the contributors for their foundational research and implementation.
+
